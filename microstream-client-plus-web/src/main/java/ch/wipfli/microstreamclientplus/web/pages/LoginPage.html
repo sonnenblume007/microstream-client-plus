@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<wicket:head>
+    <title>Home</title>
+</wicket:head>
+<body>
+<wicket:extend>
+    <div class="row">
+        <div class="offset-2 col-8">
+            <h1>Login</h1>
+
+            <form wicket:id="form" class="needs-validation" novalidate>
+                <div wicket:id="feedbackMessage"></div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="login_username">Username</label>
+                        <input wicket:id="username" type="text" id="login_username" autocomplete="username" autofocus="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="login_password">Password</label>
+                        <input wicket:id="password" type="password" id="login_password" autocomplete="current-password" class="form-control">
+                    </div>
+                </div>
+                <button wicket:id="submit" class="btn btn-primary mt-2">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+</wicket:extend>
+</body>
+</html>

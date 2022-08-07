@@ -1,0 +1,21 @@
+.page-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: vertical-base(0.5) 0;
+    font-size: smaller;
+
+    > .item {
+        flex-grow: 1;
+        border-right: 1px solid $body-color;
+        text-align: center;
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// Functions
+//
+// Which are needed in here. Functions are normally imported after variables
+// and hence would not be available here…
+// -----------------------------------------------------------------------------
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+
+// Fonts
+$root-font-size: 16px;
+$font-family-helvetica: "Helvetica", Arial, sans-serif;
+$font-family-futura: "Futura", Helvetica, sans-serif;
+$font-family-poppins: "Poppins", Helvetica, sans-serif;
+
+// Colors
+$color-cardinal: #c4133f;
+$color-white: #fff;
+$color-black: #000;
+$color-shark: #212529;
+
+// Semantic colors
+$color-primary: $color-cardinal;
+
+// Grid
+$page-max-width: 1200px;
+$spacer: 1rem; // @see $spacer in bootstrap variables
+$grid-gutter-width: 30px; // @see $grid-gutter-width in bootstrap variables
+
+// Z-index
+$z-debug: 1100;
+
+// Component configuration
+$page-logo-width: 120px;
+$page-logo-height: 43px;
+$page-logo-spacing: $grid-gutter-width / 2;
+$page-logo-breakpoint-width: 900px;
+
+// -----------------------------------------------------------------------------
+// Bootstrap overrides
+//
+// @see "~bootstrap/scss/variables"
+// @see https://getbootstrap.com/docs/4.1/getting-started/theming/#sass
+// -----------------------------------------------------------------------------
+
+$body-color: $color-shark;
+
+$enable-rounded: false;
+
+$font-family-base: $font-family-helvetica;
+$font-weight-base: 300;
+
+$headings-font-family: $font-family-futura;
+$headings-font-weight: 500;
+$h1-font-size: 1rem * (34 / strip-unit($root-font-size));
+$h2-font-size: 1rem * (24 / strip-unit($root-font-size));
+
+$primary: $color-cardinal;
+
+$input-placeholder-color: lighten($color-black, 85);

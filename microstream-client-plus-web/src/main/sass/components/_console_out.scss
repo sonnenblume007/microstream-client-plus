@@ -1,0 +1,40 @@
+
+.json-markup {
+  line-height: 17px;
+  font-size: 13px;
+  font-family: monospace;
+  white-space: pre;
+}
+
+.json-markup-key {
+  font-weight: bold;
+}
+
+.json-markup-bool {
+  color: #ca7832;
+}
+
+.json-markup-string {
+  color: #567855;
+}
+
+.json-markup-null {
+  color: #ca7832;
+}
+
+.json-markup-number {
+  color: #2e4980;
+}
+
+.console-out {
+  font-size: smaller;
+  background: #1e1e1e;
+  color: white;
+  height: 300px;
+  min-height: 300px;
+  min-width: 100%;
+  resize: vertical;
+  overflow: auto;
+  max-height: fit-content;
+  max-width: fit-content;
+}

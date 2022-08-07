@@ -1,0 +1,9 @@
+.page-header {
+    > .logo {
+        display: block;
+
+        @media (min-width: $page-logo-breakpoint-width) {
+            position: absolute;
+        }
+    }
+}

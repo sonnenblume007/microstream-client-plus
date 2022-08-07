@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// Base styles
+// -----------------------------------------------------------------------------
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: currentColor;
+    display: inline-block;
+    text-decoration-skip-ink: all;
+    text-decoration: underline;
+}
+
+// Links should always have a [href] attribute
+// Mark them red if they do not!
+a:not([href]) {
+    // The Symfony debug bar has a button without a [href]
+    // so we exclude it here…
+    &:not(.hide-button) {
+        border: 1px solid red;
+    }
+}
+
+html {
+    // @see https://developer.mozilla.org/en-US/docs/Web/CSS/-ms-overflow-style
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    // IE10/11
+    // https://connect.microsoft.com/IE/feedback/details/802625/min-height-and-flexbox-flex-direction-column-dont-work-together-in-ie-10-11-preview
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+        height: 100vh;
+    }
+}

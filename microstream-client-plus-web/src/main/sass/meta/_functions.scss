@@ -1,0 +1,13 @@
+/// Returns the vertical rhythm base value or a factor of it.
+/// @param {Number} $factor [1] - Factor of the vertical base
+/// @return {Length}
+@function vertical-base($factor: 1, $base: $spacer) {
+    @return $base * $factor;
+}
+
+/// Returns the grid gutter value or a factor of it.
+/// @param {Number} $factor [1] - Factor of the horizontal base
+/// @return {Length}
+@function horizontal-base($factor: 1, $base: $grid-gutter-width) {
+    @return $base * $factor;
+}

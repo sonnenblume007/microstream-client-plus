@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// Fonts
+// -----------------------------------------------------------------------------
+
+// @see https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/FuturaStd-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/FuturaStd-Medium.woff') format('woff');
+}
+
+// @see https://fonts.google.com/specimen/Poppins?selection.family=Poppins:500,600
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600');
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+:root {
+    font-size: $root-font-size;
+}
+
+h1, .h1 {
+    color: $color-primary;
+}

@@ -1,0 +1,21 @@
+.page-layout {
+    display: flex;
+    flex-direction: column;
+
+    > .header,
+    > .main,
+    > .footer {
+        flex-basis: auto;
+        flex-shrink: 0;
+    }
+
+    > .main {
+        flex-grow: 1;
+        padding-top: vertical-base(2);
+        padding-bottom: vertical-base(2);
+    }
+
+    > .footer {
+        box-shadow: rgba(0, 0, 0, 0.5) 1px 0 10px;
+    }
+}

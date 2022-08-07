@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body class="page-layout" id="top">
+<header wicket:id="header" class="header">
+    <div class="page-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link bi bi-grid-fill p-0 fs-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a wicket:id="settings" class="dropdown-item" href="#">Settings</a></li>
+                                <li><a wicket:id="exit" class="dropdown-item" href="#">Exit</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="container-fluid wrapper main">
+    <wicket:child/>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+wicket:
+  core:
+    resourcesettings:
+      packageresourceguard:
+        pattern:
+        - +*.map
+    csrf:
+      accepted-origins:
+        - localhost
+server:
+  compression:
+    enabled: true
+  port: 8082
+
+one:
+  microstream:
+    use-current-thread-class-loader: false
+    logging:
+      level:
+        one:
+          microstream: debug
+microstream:
+  store:
+    location: ${user.home}/microstream-spring-crud-store

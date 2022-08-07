@@ -1,0 +1,11 @@
+._text-width {
+    max-width: 75ch;
+}
+
+._text-small {
+    font-size: 0.85 * $font-size-base;
+}
+
+.invalid-feedback {
+    display: block;
+}

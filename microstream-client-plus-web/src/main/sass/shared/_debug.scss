@@ -1,0 +1,25 @@
+// If you want to debug breakpoints, run `document.documentElement.classList.toggle('debug-breakpoints')` in the
+// web developer console to toggle the necessary class on the document…
+.debug-breakpoints {
+    position: relative;
+
+    &::before {
+        background-color: #37f;
+        bottom: 0;
+        color: #fff;
+        font-family: monospace;
+        font-size: 0.75rem;
+        line-height: vertical-base();
+        padding: vertical-base(0.5) 1rem;
+        position: fixed;
+        left: 0;
+        white-space: pre-wrap;
+        z-index: $z-debug;
+
+        @each $bp, $value in $grid-breakpoints {
+            @include media-breakpoint-up($bp) {
+                content: "breakpoint: #{$bp} (#{$value})";
+            }
+        }
+    }
+}

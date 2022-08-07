@@ -1,0 +1,57 @@
+<html lang="en">
+<wicket:head>
+</wicket:head>
+<body>
+<wicket:extend>
+    <form id="form" wicket:id="form">
+        <div class="row">
+            <div class="col-11">
+                <label for="import" class="form-label">Imports</label>
+                <div wicket:id="imports">
+                    <input wicket:id="import" type="text" class="form-control mb-1" aria-describedby="import">
+                </div>
+                <div id="importHelp" class="form-text">import ch.application.application.*;</div>
+            </div>
+            <div class="col-1">
+                <button wicket:id="addImport" type="button" class="btn btn-primary float-end" style="margin-top: 31px;"><i class="bi bi-plus-lg"></i></button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-11">
+                <label for="classPath" class="form-label">Class-Path</label>
+                <div wicket:id="classPaths">
+                    <input wicket:id="classPath" type="text" class="form-control mb-1" aria-describedby="classPath">
+                </div>
+                <div id="classPathHelp1" class="form-text">/application/application/classe</div>
+                <div id="classPathHelp2" class="form-text">/application/application/application.jar</div>
+            </div>
+            <div class="col-1">
+                <button wicket:id="addClassPath" type="button" class="btn btn-primary float-end" style="margin-top: 31px;"><i class="bi bi-plus-lg"></i></button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <label for="databasePath" class="form-label">Database-Path</label>
+                <input id="databasePath" wicket:id="databasePath" type="text" class="form-control mb-1" aria-describedby="databasePath">
+                <div id="databasePathHelp" class="form-text">/application/application/database</div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <label for="databaseRootClass" class="form-label">Database-Root-Class</label>
+                <input id="databaseRootClass" wicket:id="databaseRootClass" type="text" class="form-control mb-1" aria-describedby="databaseRootClass">
+                <div id="databaseRootClassHelp" class="form-text">ch.application.application.DataRoot</div>
+            </div>
+        </div>
+
+        <div class="mt-5 d-flex align-items-center justify-content-end" style="height: 40px">
+            <a wicket:id="cancel" type="button" class="link-primary text-decoration-none  me-2" href="#" role="button">Cancel</a>
+            <button wicket:id="save" type="button" class="btn btn-primary"><i class="">Save</i></button>
+        </div>
+    </form>
+</wicket:extend>
+</body>
+</html>

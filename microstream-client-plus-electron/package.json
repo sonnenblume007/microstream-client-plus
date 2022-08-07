@@ -35,7 +35,9 @@
       "maintainer": "Fabian Wipfli",
       "category": "Development",
       "target": [
-        "AppImage"
+        "AppImage",
+        "deb",
+        "rpm"
       ],
       "icon": "app.png"
     },

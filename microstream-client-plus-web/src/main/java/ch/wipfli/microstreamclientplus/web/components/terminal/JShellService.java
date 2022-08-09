@@ -240,7 +240,7 @@ public class JShellService {
     private List<String> getDependenciesClassPath() {
         final List<String> result = new ArrayList<>();
         final String separator = System.getProperty("file.separator");
-        final String parentFolder = separator + "jar" + separator;
+        final String parentFolder = "jar" + separator;
 
         final Optional<String> microstreamClientJarPath = this.classPath.stream()
             .filter(f -> f.contains(parentFolder))
@@ -249,7 +249,7 @@ public class JShellService {
         if (microstreamClientJarPath.isPresent()) {
             final int index = microstreamClientJarPath.get().indexOf(parentFolder);
             final String parentPath = microstreamClientJarPath.get().substring(0, index);
-            final String dependencyPath = parentPath + "/dependencies";
+            final String dependencyPath = parentPath + "dependencies";
             result.add(dependencyPath);
             Optional.ofNullable(FileUtils.getFile(dependencyPath).listFiles()).stream()
                 .filter(Objects::nonNull)

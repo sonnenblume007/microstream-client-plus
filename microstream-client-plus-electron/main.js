@@ -117,7 +117,7 @@ async function loadContent(port, errorList, win, limit = 20) {
         if (limit === 0) {
             errorList.push(
                 '<span>Could not start the java application.</span><br>' +
-                '<span style="font-size: smaller; font-weight: normal;">Min. Java Version 11 is required.</span><br>' +
+                '<span style="font-size: smaller; font-weight: normal;">Java Version 11 required.</span><br>' +
                 '<span style="font-size: smaller; font-weight: normal;">Start the application with the command line for more information.</span>' +
                 '');
         }

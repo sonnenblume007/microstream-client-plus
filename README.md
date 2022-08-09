@@ -1,6 +1,6 @@
 # Microstream Client Plus
 
-Java Console for Microstream Databases.
+Java GUI Console for Microstream Databases. Java 11 required.
 
 ### Downloads
 
@@ -48,6 +48,6 @@ Declare the root java model.
 
 
 ### Example
-* Get the root object. ``DataRoot root = root();``
+* Get the root object. ``var root = root();``
 * Print the root object. ``print(root);``
 * Store the root object. ``store(root);``

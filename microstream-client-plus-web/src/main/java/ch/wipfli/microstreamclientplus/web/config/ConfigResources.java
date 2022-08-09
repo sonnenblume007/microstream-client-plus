@@ -21,8 +21,8 @@ public class ConfigResources implements WicketApplicationInitConfiguration {
         final String[] allowPattern = {"+*.pdf"};
         final String[] resources = {
             "public/editor.worker.js",
-            "public/node_modules_monaco-editor_esm_vs_basic-languages_java_java_js.js"
-
+            "public/node_modules_monaco-editor_esm_vs_basic-languages_java_java_js.js",
+            "public/assets/images/app.png"
         };
 
         webApplication.getServletContext().addListener(new RequestContextListener());
